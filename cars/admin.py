@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import import car
+from .models import Car
 
 # Register your models here.
-admine.site.register(car)
+class CarAdmin(admin.ModelAdmin):
+    admin.site.register(Car, CarAdmin)
